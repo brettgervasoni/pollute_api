@@ -1,0 +1,31 @@
+{
+  "name": "boilerplate_api",
+  "version": "1.0.0",
+  "description": "boilerplrate api",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js",
+    "build": "babel src/ -d dist/",
+    "prepare": "npm run build",
+    "flow": "flow",
+    "prod": "node dist/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lodash": "^4.17.4",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-flow": "^7.9.0",
+    "flow-bin": "^0.125.1",
+    "nodemon": "^2.0.4"
+  }
+}
